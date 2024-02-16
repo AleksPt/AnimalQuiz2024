@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		FAB7CF102B7F4EAE002F54F8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB7CF0F2B7F4EAE002F54F8 /* AppDelegate.swift */; };
 		FAB7CF122B7F4EAE002F54F8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB7CF112B7F4EAE002F54F8 /* SceneDelegate.swift */; };
-		FAB7CF142B7F4EAE002F54F8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB7CF132B7F4EAE002F54F8 /* ViewController.swift */; };
+		FAB7CF142B7F4EAE002F54F8 /* QuestionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB7CF132B7F4EAE002F54F8 /* QuestionsViewController.swift */; };
 		FAB7CF172B7F4EAE002F54F8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAB7CF152B7F4EAE002F54F8 /* Main.storyboard */; };
 		FAB7CF192B7F4EB0002F54F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAB7CF182B7F4EB0002F54F8 /* Assets.xcassets */; };
 		FAB7CF1C2B7F4EB0002F54F8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAB7CF1A2B7F4EB0002F54F8 /* LaunchScreen.storyboard */; };
+		FAB7CF262B7F554C002F54F8 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB7CF252B7F554C002F54F8 /* ResultViewController.swift */; };
+		FAB7CF2B2B7F58F4002F54F8 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB7CF2A2B7F58F4002F54F8 /* Question.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FAB7CF0C2B7F4EAE002F54F8 /* AnimalQuiz2024.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimalQuiz2024.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAB7CF0F2B7F4EAE002F54F8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAB7CF112B7F4EAE002F54F8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FAB7CF132B7F4EAE002F54F8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FAB7CF132B7F4EAE002F54F8 /* QuestionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsViewController.swift; sourceTree = "<group>"; };
 		FAB7CF162B7F4EAE002F54F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FAB7CF182B7F4EB0002F54F8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FAB7CF1B2B7F4EB0002F54F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FAB7CF1D2B7F4EB0002F54F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAB7CF252B7F554C002F54F8 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		FAB7CF2A2B7F58F4002F54F8 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,49 @@
 		FAB7CF0E2B7F4EAE002F54F8 /* AnimalQuiz2024 */ = {
 			isa = PBXGroup;
 			children = (
-				FAB7CF0F2B7F4EAE002F54F8 /* AppDelegate.swift */,
-				FAB7CF112B7F4EAE002F54F8 /* SceneDelegate.swift */,
-				FAB7CF132B7F4EAE002F54F8 /* ViewController.swift */,
-				FAB7CF152B7F4EAE002F54F8 /* Main.storyboard */,
+				FAB7CF272B7F58AC002F54F8 /* ViewControllers */,
+				FAB7CF282B7F58BC002F54F8 /* Storyboards */,
+				FAB7CF2C2B7F5F4E002F54F8 /* Model */,
+				FAB7CF292B7F58CD002F54F8 /* App */,
 				FAB7CF182B7F4EB0002F54F8 /* Assets.xcassets */,
-				FAB7CF1A2B7F4EB0002F54F8 /* LaunchScreen.storyboard */,
-				FAB7CF1D2B7F4EB0002F54F8 /* Info.plist */,
 			);
 			path = AnimalQuiz2024;
+			sourceTree = "<group>";
+		};
+		FAB7CF272B7F58AC002F54F8 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				FAB7CF132B7F4EAE002F54F8 /* QuestionsViewController.swift */,
+				FAB7CF252B7F554C002F54F8 /* ResultViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		FAB7CF282B7F58BC002F54F8 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				FAB7CF152B7F4EAE002F54F8 /* Main.storyboard */,
+				FAB7CF1A2B7F4EB0002F54F8 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		FAB7CF292B7F58CD002F54F8 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				FAB7CF0F2B7F4EAE002F54F8 /* AppDelegate.swift */,
+				FAB7CF112B7F4EAE002F54F8 /* SceneDelegate.swift */,
+				FAB7CF1D2B7F4EB0002F54F8 /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		FAB7CF2C2B7F5F4E002F54F8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FAB7CF2A2B7F58F4002F54F8 /* Question.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +176,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FAB7CF142B7F4EAE002F54F8 /* ViewController.swift in Sources */,
+				FAB7CF142B7F4EAE002F54F8 /* QuestionsViewController.swift in Sources */,
 				FAB7CF102B7F4EAE002F54F8 /* AppDelegate.swift in Sources */,
 				FAB7CF122B7F4EAE002F54F8 /* SceneDelegate.swift in Sources */,
+				FAB7CF262B7F554C002F54F8 /* ResultViewController.swift in Sources */,
+				FAB7CF2B2B7F58F4002F54F8 /* Question.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,12 +334,12 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = L23B96GPNM;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = AnimalQuiz2024/Info.plist;
+				INFOPLIST_FILE = AnimalQuiz2024/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,9 +347,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = ru.alexpetrenko.AnimalQuiz2024;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -322,12 +365,12 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = L23B96GPNM;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = AnimalQuiz2024/Info.plist;
+				INFOPLIST_FILE = AnimalQuiz2024/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -335,9 +378,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = ru.alexpetrenko.AnimalQuiz2024;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
